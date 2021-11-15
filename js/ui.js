@@ -18,10 +18,9 @@ UI.prototype.addCommentToUI = function(newComment){
                         </div>
                         <div class="user-comment ms-2">
                             <div class="d-flex justify-content-between">
-                                <h6 class="header fw-bold">sdfsdfsdfs}</h6>
+                                <h6 class="header fw-bold">${newComment.name}</h6>
                             </div>
-                            <small class="textcomment">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Iure, voluptate!</small>
+                            <small class="textcomment">${newComment.textarea}</small>
                         </div>
                         <div><i class="fas fa-times"></i></div>
                     </div>
