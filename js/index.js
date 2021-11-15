@@ -43,6 +43,7 @@ function addComment(e){
 function deleteComment(e){
     if(e.target.id ==="removeComment"){
         ui.deleteFromToUI(e.target);
+        // console.log(e.target)
     }
  }
 

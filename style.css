@@ -103,7 +103,7 @@ body { font-family: sans-serif; }
 .comments{
     background-color: rgb(190, 213, 255);
 }
-.user-image img{
+.user-image {
     height: 50px;
     width:50px;
     border-radius:50%;
@@ -135,9 +135,14 @@ body { font-family: sans-serif; }
 .textcomment{
    hyphens: auto;
    overflow-wrap: break-word;
+   position: relative;
+  left: 0;
 }
 .alertmessage{
     width: 300px;
+}
+.body .fas{
+    cursor: pointer;
 }
 
 /* -------------------------------------------------- */

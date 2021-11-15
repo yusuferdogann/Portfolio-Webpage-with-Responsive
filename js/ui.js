@@ -11,26 +11,27 @@ UI.prototype.addCommentToUI = function(newComment){
                 `
                 <div class="body col-sm-12 mx-3 my-4">
                 <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-
-                        <div class="col user-image ">
-                            <img src="./images/profile3.png" alt="">
-                        </div>
-                        <div class="user-comment ms-2">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="header fw-bold">${newComment.name}</h6>
-                            </div>
-                            <small class="textcomment">${newComment.textarea}</small>
-                        </div>
-                        <div><i class="fas fa-times"></i></div>
+                   <div class="d-flex">
+                    <div class="user-image ">
+                        <img class="user-image" src="./images/profile3.png" alt="">
                     </div>
+                    <div class="user-comment ms-2">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="header fw-bold">${newComment.name}</h6>
+                        </div>
+                        <small class="textcomment float-start">${newComment.textarea}</small>
+                    </div>
+                   </div>
+                    <div><i id="removeComment" class="fas fa-times"></i></div>
+
                 </div>
-            </div>`
+            </div>`;
 }
 
 // add Comment
 UI.prototype.deleteFromToUI = function(element){
-    element.parentElement.parentElement.parentElement.parentElement.remove();
+    element.parentElement.parentElement.parentElement.remove();
+    // console.log(e.target)
 }
 
    // alert div------
