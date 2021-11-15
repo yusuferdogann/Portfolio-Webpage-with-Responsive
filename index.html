@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+
     <!-- --  Favicon  ------->
     <link rel="icon" href="./images/icon.jpg">
 
@@ -356,6 +356,7 @@
     <section>
         <div class="comments ">
             <h1 class="text-center">Share with me</h1>
+            <div class="alertmessage text-center mx-auto"></div>
 
             <form id="commentsform">
                 <div class="share col d-flex justify-content-center">
@@ -382,13 +383,16 @@
             <div class="users-commets  row mt-4  d-flex justify-content-center">
 
                 <div class="body col-sm-12 mx-3 my-4">
-                    <div class="d-flex">
+                    <div class="d-flex ">
                         <div class="col user-image ">
                             <img src="./images/profile2.png" alt="">
                         </div>
                         <div class="user-comment ms-2">
-                            <h6 class="header fw-bold">AYŞE KARAMAN</h6>
-                            <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</small>
+                            <div class="d-flex justify-content-between">
+                                <h6 class="header fw-bold">AYŞE KARAMAN</h6>
+                                <i id="removeComment" class="fas fa-times"></i>
+                            </div>
+                            <small class="textcomment">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</small>
                         </div>
                     </div>
 
@@ -400,13 +404,18 @@
                             <img src="./images/profile1.png" alt="">
                         </div>
                         <div class="user-comment ms-2">
-                            <h6 class="header fw-bold">YUSUF ERDOGAN</h6>
+                            <div class="d-flex justify-content-between">
+                                <h6 class="header fw-bold">YUSUF ERDOGAN</h6>
+                                <i id="removeComment" class="fas fa-times"></i>
+                            </div>
                             <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</small>
                         </div>
-
                     </div>
-
                 </div>
+
+
+              
+
 
 
             </div>
@@ -423,7 +432,7 @@
                 <i class="fab fa-whatsapp fa-1x"></i>
                 <i class="far fa-envelope"></i>
                 <i class="fas fa-phone-alt"></i>
-                        </div>
+            </div>
 
             <div class="messagebox col-xl-6 mt-5">
                 <div class="d-flex col-12 p-2">
@@ -523,7 +532,7 @@
     <script src="./js/comment.js"></script>
     <script src="./js/index.js"></script>
 
-   
+
 </body>
 
 </html>

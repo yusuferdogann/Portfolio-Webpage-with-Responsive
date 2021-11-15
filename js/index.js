@@ -5,6 +5,7 @@ var textareaElement = document.getElementById("textbox");
 var nav = document.querySelector('nav');
 var liItem = document.querySelectorAll(".nav-link");
 var navbar = document.querySelector(".navbar");
+var users_comments = document.querySelector(".users-commets");
 
 
 
@@ -16,6 +17,7 @@ eventListeners();
 // All events inside functions--------
 function eventListeners(){
     form_share.addEventListener("submit",addComment);
+    users_comments.addEventListener("click",deleteComment);
 }
 
 function addComment(e){
@@ -23,16 +25,26 @@ function addComment(e){
     var textarea = textareaElement.value;
 
     if(name === "" || textarea === ""){
+        ui.displayMessages("please enter all the inputs","danger")
+
 
     }
     else{
         // new comment----------------
         const newComment = new Comment(name,textarea);
         ui.addCommentToUI(newComment);
-    }
+        ui.displayMessages("add your comment","success")
 
+    }
     e.preventDefault();
 }
+
+// delete comment-----
+function deleteComment(e){
+    if(e.target.id ==="removeComment"){
+        ui.deleteFromToUI(e.target);
+    }
+ }
 
 // navbar script-----
 window.addEventListener('scroll', function () {
